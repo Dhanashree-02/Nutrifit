@@ -12,8 +12,7 @@ const Home = () => {
             Your Health Is Our Top Priority
           </h1>
           <p className="text-lg md:text-base lg:text-xl my-10">
-            Securely share your comprehensive medical history with doctors and
-            loved ones, for better communication and care.
+            Securely share your comprehensive medical history with us for better communication and care.
           </p>
           <Button>Appointment Now</Button>
         </div>

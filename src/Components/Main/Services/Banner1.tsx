@@ -14,8 +14,12 @@ const Banner1 = () => {
           ))}
         </ul>
       </div>
-      <div className="bg-[#9ae7ff] shadow-xl rounded-2xl p-5 pb-0 max-w-xs md:max-w-md">
-        <img src={Banner1Data.img} alt="Banner1" />
+      <div className="bg-[#9ae7ff] shadow-xl rounded-2xl p-10 pb-10 max-w-[300px] sm:max-w-[400px] md:max-w-[500px] overflow-hidden">
+        <img 
+          src={Banner1Data.img} 
+          alt="Nutrition Consultation"
+          className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-300" 
+        />
       </div>
     </div>
   );

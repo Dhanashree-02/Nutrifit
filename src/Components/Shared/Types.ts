@@ -6,13 +6,24 @@ export enum SelectedPage {
 }
 
 export enum SelectedService {
-  Neurology = 'neurology',
-  Cardiology = 'cardiology',
-  Orthopedics = 'orthopedics',
-  Surgery = 'surgery',
-  Dentistry = 'dentistry',
-  Radiology = 'radiology',
-  Urology = 'urology',
-  Medicine = 'medicine',
+  MealPlanning = 'meal-planning',
+  WeightManagement = 'weight-management',
+  SportsNutrition = 'sports-nutrition',
+  DietTherapy = 'diet-therapy',
+  Wellness = 'wellness',
+  FamilyNutrition = 'family-nutrition',
+  CorporateWellness = 'corporate-wellness',
+  NutritionEducation = 'nutrition-education',
   SeeMore = 'seemore',
+}
+
+export enum UserType {
+  User = 'user',
+  Admin = 'admin'
+}
+
+export interface LoginCredentials {
+  email: string;
+  password: string;
+  userType: UserType;
 }

@@ -1,9 +1,16 @@
 import Logo from '@/assets/Images/Logo.png';
 import NavBar from './NavBar';
-import { useState, useEffect } from 'react';
-import { SelectedPage } from '@/Components/Shared/Types';
+import { useState, useEffect, Dispatch, SetStateAction } from 'react';
+import { SelectedPage, UserType } from '@/Components/Shared/Types';
 
-const Header = () => {
+type Props = {
+  isLoggedIn: boolean;
+  setIsLoggedIn: Dispatch<SetStateAction<boolean>>;
+  userType: UserType | null;
+  setUserType: Dispatch<SetStateAction<UserType | null>>;
+};
+
+const Header = ({ isLoggedIn, setIsLoggedIn, userType, setUserType }: Props) => {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
     SelectedPage.Home
   );
@@ -33,6 +40,10 @@ const Header = () => {
         flexBetween={flexBetween}
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
+        isLoggedIn={isLoggedIn}
+        setIsLoggedIn={setIsLoggedIn}
+        userType={userType}
+        setUserType={setUserType}
       />
     </div>
   );
