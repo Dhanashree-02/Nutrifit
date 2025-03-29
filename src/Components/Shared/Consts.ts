@@ -199,68 +199,68 @@ export const Banner1Data = {
 };
 
 export const DoctorsData = {
-  heading: 'Meet Our Specialists',
+  heading: 'Meet Our Specialist',
   doctors: [
     {
       img: doc1,
-      name: 'Dr. John Smith',
-      job: 'Cardiologist',
+      name: 'Dr. Amar Desai, RD',
+      job: 'Clinical Nutritionist',
     },
     {
       img: doc2,
-      name: 'Dr. Kristin Watson',
-      job: 'Dentist',
+      name: 'Dr. Priyanka Reddy',
+      job: 'Sports Dietitian',
     },
     {
       img: doc3,
-      name: 'Dr. Robert Flores',
-      job: 'Surgeon',
+      name: 'Arjun Malhotra, MS',
+      job: 'Wellness Coach',
     },
     {
       img: doc4,
-      name: 'Dr. Katherine Allen',
-      job: 'Neurologist',
+      name: 'Dr. Meera Kapoor',
+      job: 'Nutrition Therapist',
     },
   ],
   heading2: 'Who Are We?',
-  desc: 'A collaborative hospital service website is a digital platform that brings together healthcare professionals, patients and administrators to streamline and enganhe the delivery of healthcare services. This innovative platform allows for seamless communication and coordination among healthcare teams, enabling them to provide more efficient and personalized care to patients.',
+  desc: 'NutriFit is a comprehensive nutrition and wellness platform that connects certified nutritionists, dietitians, and health coaches with individuals seeking personalized dietary guidance. Our innovative approach combines expert nutritional counseling with cutting-edge technology to deliver customized meal plans, dietary recommendations, and ongoing support. We are committed to helping you achieve your health goals through evidence-based nutrition practices and sustainable lifestyle changes.',
   img: Banner2,
 };
 
 export const FeedbackData = {
-  heading: 'Patient Feedback',
+  heading: 'Client Success Stories',
   feedbacks: [
     {
       img: user1,
-      name: 'Ralph Edwards',
-      job: 'Businessman',
-      desc: 'My experience with this hospital has been great. I highly recommend their services to anyone in need of quility healthcare. they truly prioritize patients care!',
+      name: 'Rajesh Patel',
+      job: 'Fitness Enthusiast',
+      desc: 'Working with NutriFit transformed my approach to healthy eating. Their personalized meal plans and expert guidance helped me achieve my fitness goals. The nutritionists are knowledgeable and truly care about your success!',
     },
     {
       img: user2,
-      name: 'Josh Smith',
-      job: 'Engineer',
-      desc: 'The healthcare professionals were top-natch. they were knowledgeable, attentive, and took the time to answer all of my questions and address my concerns',
+      name: 'Arun Mehta ',
+      job: 'Marathon Runner',
+      desc: 'The sports nutrition program at NutriFit significantly improved my athletic performance. Their detailed nutrition plans and supplement recommendations were exactly what I needed for my marathon training.',
     },
     {
       img: user3,
-      name: 'Eleanor Pena',
-      job: 'Teacher',
-      desc: "One thing that stood out to me was the efficiency of the service, i didn't have to wait long for my appointment, and the entire process was hassle-free experience",
+      name: 'Priya Sharma',
+      job: 'Working Professional',
+      desc: "NutriFit's corporate wellness program has been a game-changer for my lifestyle. The online consultations are convenient, and their practical approach to healthy eating fits perfectly with my busy schedule. I've never felt better!",
     },
   ],
 };
 
 export const FooterData = {
   logo: logo,
-  addresses: ['4517 Washington Ave', 'Manchester, Kentucky 39495'],
-  phone: '+1 (505) 555-0125',
+  addresses: ['123 Wellness Street', 'Pune, Maharashtra 400001'],
+  phone: '+91 (022) 2345-6789',
   departments: [
-    'Cardiology',
-    'Dentistry',
-    'Neurology',
-    'Orthopedics',
-    'Surgery',
+    'Weight Management',
+    'Sports Nutrition',
+    'Diet Therapy',
+    'Family Nutrition',
+    'Corporate Wellness',
     'More',
   ],
   links: links,

@@ -11,8 +11,8 @@ type Props = {
 const AdminLogin = ({ setIsLoggedIn, setUserType }: Props) => {
   const navigate = useNavigate();
   const [loginData, setLoginData] = useState({
-    email: 'admin123@gmail.com',
-    password: 'Admin@123',
+    email: '',
+    password: '',
   });
 
   const handleLogin = (e: React.FormEvent) => {

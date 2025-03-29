@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { UserType } from '@/Components/Shared/Types';
 import Button from '@/Components/UI/Button';
+import { registerUser, loginUser } from '@/services/userService';
 
 type Props = {
   setIsLoggedIn: (value: boolean) => void;
@@ -25,31 +26,39 @@ const UserLogin = ({ setIsLoggedIn, setUserType }: Props) => {
     dob: '',
   });
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsLoggedIn(true);
-    setUserType(UserType.User);
-    navigate('/user-dashboard');
+    try {
+      const user = await loginUser(loginData.email, loginData.password);
+      setIsLoggedIn(true);
+      setUserType(UserType.User);
+      navigate('/user-dashboard');
+    } catch (error) {
+      alert('Login failed: ' + (error as Error).message);
+    }
   };
 
-  const handleRegister = (e: React.FormEvent) => {
+  const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Add registration logic here
-    setRegisterData({
-      name: '',
-      email: '',
-      password: '',
-      phone: '',
-      address: '',
-      dob: '',
-    });
-    setRegistrationSuccess(true);
-    setIsRegistering(false);
-    
-    setLoginData({
-      ...loginData,
-      email: registerData.email
-    });
+    try {
+      await registerUser(registerData);
+      setRegisterData({
+        name: '',
+        email: '',
+        password: '',
+        phone: '',
+        address: '',
+        dob: '',
+      });
+      setRegistrationSuccess(true);
+      setIsRegistering(false);
+      setLoginData({
+        ...loginData,
+        email: registerData.email
+      });
+    } catch (error) {
+      alert('Registration failed: ' + (error as Error).message);
+    }
   };
 
   return (

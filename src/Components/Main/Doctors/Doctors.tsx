@@ -19,7 +19,7 @@ const Doctors = () => {
       <div className="mb-5 m-auto text-center max-w-2xl text-xs sm:text-base md:text-lg">
         {DoctorsData.desc}
       </div>
-      <img className="m-auto" src={DoctorsData.img} />
+      <img className="m-auto w-full max-w-[350px] h-auto"  src={DoctorsData.img} alt="About NutriFit"/>
     </SectionWrapper>
   );
 };
