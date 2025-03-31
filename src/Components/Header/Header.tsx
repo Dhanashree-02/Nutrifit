@@ -1,7 +1,7 @@
-import Logo from '@/assets/Images/Logo.png';
-import NavBar from './NavBar';
-import { useState, useEffect, Dispatch, SetStateAction } from 'react';
+import Logo from '@/assets/Images/nutrifit.png';
 import { SelectedPage, UserType } from '@/Components/Shared/Types';
+import { Dispatch, SetStateAction, useEffect, useState } from 'react';
+import NavBar from './NavBar';
 
 type Props = {
   isLoggedIn: boolean;
@@ -35,7 +35,7 @@ const Header = ({ isLoggedIn, setIsLoggedIn, userType, setUserType }: Props) => 
         isTopOfPage ? '' : 'bg-[#84ceff]'
       } transition fixed top-0 z-30 w-full p-5 md:px-16`}
     >
-      <img className="w-10 sm:w-20" src={Logo} alt="Logo" />
+      <img className="w-10 sm:w-60" src={Logo} alt="Logo" />
       <NavBar
         flexBetween={flexBetween}
         selectedPage={selectedPage}

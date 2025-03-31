@@ -1,12 +1,12 @@
-import mealPlanning from '@/assets/Images/Icons/meal-planning.png';
-import weightManagement from '@/assets/Images/Icons/weight-management.png';
-import sportsNutrition from '@/assets/Images/Icons/sports-nutrition.png';
-import dietTherapy from '@/assets/Images/Icons/diet-therapy.png';
-import wellness from '@/assets/Images/Icons/wellness.png';
-import familyNutrition from '@/assets/Images/Icons/family-nutrition.png';
 import corporateWellness from '@/assets/Images/Icons/corporate-wellness.png';
+import dietTherapy from '@/assets/Images/Icons/diet-therapy.png';
+import familyNutrition from '@/assets/Images/Icons/family-nutrition.png';
+import mealPlanning from '@/assets/Images/Icons/meal-planning.png';
 import nutritionEducation from '@/assets/Images/Icons/nutrition-education.png';
 import seeMoreImage from '@/assets/Images/Icons/seeMoreImage.png';
+import sportsNutrition from '@/assets/Images/Icons/sports-nutrition.png';
+import weightManagement from '@/assets/Images/Icons/weight-management.png';
+import wellness from '@/assets/Images/Icons/wellness.png';
 
 import Banner1 from '@/assets/Images/Banner1.png';
 import Banner2 from '@/assets/Images/Banner2.png';
@@ -20,7 +20,7 @@ import user1 from '@/assets/Images/users/user1.jpg';
 import user2 from '@/assets/Images/users/user2.jpg';
 import user3 from '@/assets/Images/users/user3.jpg';
 
-import logo from '@/assets/Images/logo.png';
+import logo from '@/assets/Images/nutrifit.png';
 
 export const links = ['Home', 'Doctors', 'Services', 'Reviews'];
 
@@ -253,8 +253,8 @@ export const FeedbackData = {
 
 export const FooterData = {
   logo: logo,
-  addresses: ['123 Wellness Street', 'Pune, Maharashtra 400001'],
-  phone: '+91 (022) 2345-6789',
+  addresses: ['Nakhate Wasti Rahatani ', 'Pune, Maharashtra 411017'],
+  phone: '+91 9552003211',
   departments: [
     'Weight Management',
     'Sports Nutrition',
