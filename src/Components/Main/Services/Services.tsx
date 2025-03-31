@@ -9,7 +9,7 @@ import SectionWrapper from '../SectionWrapper';
 
 const Services = () => {
   const [SelectService, setSelectService] = useState<SelectedService>(
-    SelectedService.Cardiology
+    SelectedService.MealPlanning
   );
 
   const selectedServiceData = ServicesData.find(
@@ -17,7 +17,7 @@ const Services = () => {
   );
   return (
     <SectionWrapper id="services">
-      <h2 className="text-4xl font-bold text-center mb-10">Services</h2>
+      <h2 className="text-4xl font-bold text-center mb-10">Our Services</h2>
       <div className=" flex flex-col justify-between lg:flex-row gap-10 lg:gap-5">
         <div className="grid grid-cols-3 gap-5">
           {ServicesData?.map((service, index) => (
@@ -39,7 +39,7 @@ const Services = () => {
             ))}
           </ul>
           <div className="lg:ml-5 mt-5">
-            <Button>Appointment Now</Button>
+            <Button>Book Consultation</Button>
           </div>
         </div>
       </div>
